@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Movie list</title>
+
+   
+  <body>
+    <div class="preloader preloader--none">
+      <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <div class="oneFilm oneFilm--wrapper oneFilm--none"></div>
+
+    <div class="wrapper">
+
+      <header class="header">
+        
+      <div class="select-container">
+        <span class="select-label">Select genre:</span>
+        <select id='genreSelect'>
+          <option value=''>all</option>
+        </select>
+      </div>
+
+        <div class="view-container">
+          <span class="view-container__text">View as:</span>
+          <div class="view-box view-box--block view-box--active js-viewBlock" data-action="viewBlock"></div>
+          <div class="view-box view-box--list js-viewList" data-action="viewList"></div>
+  
+        </div>
+      </header>
+
+      <main id='main' class="main">
+        <div class="film-list"></div>
+        <div class="favorites"></div>
+        <div class="favorites__toggle"></div>
+      </main>
+
+    </div>
+
+  
+  </body>
+</html>

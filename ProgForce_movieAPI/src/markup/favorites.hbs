@@ -1,0 +1,14 @@
+
+    <h2 class="favorites-h2">Favorites</h2>
+    <ul class="favorites-list">
+        {{#if favorites.length}}
+            {{#each favorites}}
+            <li id={{this.id}} class="favorites-list__element">
+                <p class="favorites-list__element--name">{{this.name}}</p>
+                <button data-action="delete" class="deleteBtn"></button>
+            </li>
+            {{/each}}
+            {{else}}
+            <li class="favorites__noMovie">You don`t have any favorites movie</li>
+        {{/if}}
+    </ul>

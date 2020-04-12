@@ -1,0 +1,40 @@
+
+    <ul class="js-movie-list movie-list">
+        {{#each allFilms}}
+        <li id={{this.id}} class="movie-list__element">
+
+            <div class="img-container">
+
+            <img src={{this.img}} alt="movie poster" class="movie-list__element-img">
+            </div>
+           
+
+        {{#if this.inFavorite}}
+            <input type="checkbox" name="favoriteInput"  id='check{{this.id}}' class="movie-list__element--checkbox" data-action="favorite" checked/>
+        {{else}}
+            <input type="checkbox" name="favoriteInput" id='check{{this.id}}' class="movie-list__element--checkbox" data-action="favorite" />
+        {{/if}}
+
+            <label for='check{{this.id}}' class="movie-list__element-favorite" data-action="favorite"></label>
+
+            <div class="movie-list__element-info">
+
+          
+                <h2 class="movie-list__element-name">{{this.name}}</h2>
+                <p class="movie-list__element-year">{{this.year}}</p>
+
+                  <div class="movie-list__element-description">{{this.description}}</div>
+
+                <div class="movie-list__element-genre">
+                    <ul class="genre-list">
+                        {{#each this.genres}}
+                        <li class="genre-elemetn">{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+
+              </div>
+        
+        </li>
+        {{/each}}
+    </ul>

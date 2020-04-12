@@ -1,0 +1,203 @@
+@media (max-width: 1024px) {
+  .movie-list__element {
+    width: 33%;
+  }
+
+  .oneFilm__img {
+    max-width: 50vw;
+  }
+
+  .oneFilm__description {
+    min-height: 30vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .select-container {
+    margin-right: 0;
+  }
+
+  .favorites {
+    width: 35%;
+  }
+  .movie-list__element {
+    width: 49%;
+  }
+  .oneFilm__img {
+    min-width: 25vw;
+    max-width: 40vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .wrapper {
+    overflow: hidden;
+  }
+  .film-list {
+    width: 100%;
+  }
+
+  .favorites {
+    position: fixed;
+    width: 200px;
+    right: 20px;
+    transform: translateX(120%);
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  .favorites__toggle {
+    position: fixed;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-image: url('../img/favorite.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 200ms linear;
+  }
+
+  .favorites--show {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 200ms linear;
+  }
+
+  .favorites__toggle--show {
+    transform: rotate(216deg);
+    transition: all 200ms linear;
+  }
+
+  .oneFilm__description {
+    width: 95%;
+    line-height: 20px;
+  }
+
+  .closeBtn {
+    top: 15px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: 85px 62px;
+  }
+}
+
+@media (max-width: 458px) {
+  .movie-list__element {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .list .movie-list__element-name {
+    font-size: 18px;
+  }
+
+  .list .genre-elemetn {
+    font-size: 14px;
+  }
+
+  .list .img-container {
+    min-width: 100px;
+    max-width: 100px;
+    height: 150px;
+  }
+
+  .list .genre-list {
+    flex-wrap: wrap;
+  }
+
+  .oneFilm__genres-element,
+  .oneFilm__director,
+  .oneFilm__starring {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 388px) {
+  .list .movie-list__element-name {
+    font-size: 16px;
+  }
+  .list .movie-list__element-year {
+    font-size: 14px;
+  }
+  .list .movie-list__element-description {
+    font-size: 14px;
+    max-height: 14px;
+  }
+
+  .header {
+    padding: 0 30px;
+  }
+
+  .view-box {
+    width: 30px;
+    height: 30px;
+    background-size: 70px 73px;
+  }
+
+  .view-box--list {
+    background-position: -5px -4px;
+  }
+
+  .view-box--block {
+    background-position: -37px -4px;
+  }
+
+  .view-container__text {
+    font-size: 14px;
+  }
+
+  .select-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .oneFilm__description-container {
+    flex-direction: column;
+  }
+
+  .oneFilm_img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oneFilm__img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .oneFilm__underPhoto {
+    flex-direction: row-reverse;
+    width: 40%;
+    margin-bottom: 15px;
+  }
+
+  .oneFilm__name {
+    display: block;
+    font-size: 30px;
+    max-width: 230px;
+    margin: 0 auto 30px;
+  }
+
+  .oneFilm__description {
+    min-height: 0;
+    max-height: 20vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .oneFilm__name {
+    font-size: 26px;
+    max-width: 180px;
+  }
+}

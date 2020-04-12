@@ -1,0 +1,43 @@
+
+    <button class="closeBtn"></button>
+    <h2 class="oneFilm__name">{{name}}</h2>
+
+    <div class="oneFilm__description-container">
+
+        <div class="oneFilm_img-container">
+
+            <img src={{img}} alt={{name}} class="oneFilm__img">
+            <div class="oneFilm__underPhoto" id={{this.id}}>
+
+                {{#if this.inFavorite}}
+                    <input type="checkbox" name="favoriteInput"  id='check{{this.id}}' class="oneFilm__checkbox" data-action="favorite" checked/>
+                {{else}}
+                    <input type="checkbox" name="favoriteInput" id='check{{this.id}}' class="oneFilm__checkbox" data-action="favorite" />
+                {{/if}}
+
+                    <label for='check{{this.id}}' class="oneFilm__checkbox--label"  data-action="favorite"></label>
+
+                 <p class="oneFilm__year">{{year}}</p>
+            </div>
+
+            <ul class="oneFilm__genres">
+                {{#each genres}}
+                    <li class="oneFilm__genres-element">{{this}}</li>
+                {{/each}}
+            </ul>
+
+        </div>
+        
+        <div class="oneFilm__info">
+          <p class="oneFilm__description">{{description}}</p>
+          <p class="oneFilm__director">Director: {{director}}</p>
+          <p>
+              Starring:
+              {{#each starring}}
+              <span class="oneFilm__starring">{{this}},</span>
+              {{/each}}
+          </p>
+        </div>
+        
+    </div>
+
