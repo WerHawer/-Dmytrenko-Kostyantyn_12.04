@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default {
-  BASE_URL: 'http://my-json-server.typicode.com/moviedb-tech/movies/list',
+  BASE_URL: 'https://my-json-server.typicode.com/moviedb-tech/movies/list',
 
   async loadFilms() {
     try {
