@@ -32,6 +32,9 @@
   .movie-list__element {
     width: 49%;
   }
+  .oneFilm--wrapper {
+    height: 110%;
+  }
   .oneFilm__img {
     min-width: 25vw;
     max-width: 40vw;
