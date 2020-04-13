@@ -42,7 +42,8 @@ html {
   cursor: pointer;
 }
 
-.view-box:hover {
+.view-box:hover,
+.view-box:focus {
   transform: scale(1.1);
 }
 
@@ -104,7 +105,8 @@ html {
   transition: all 150ms linear;
 }
 
-.movie-list__element:hover {
+.movie-list__element:hover,
+.movie-list__element:focus {
   transform: scale(0.9);
   box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
   transition: all 150ms linear;
@@ -191,7 +193,8 @@ html {
   cursor: pointer;
 }
 
-.favorites-list__element:hover .favorites-list__element--name {
+.favorites-list__element:hover .favorites-list__element--name,
+.favorites-list__element:focus .favorites-list__element--name {
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   transition: all 150ms linear;
 }
@@ -334,7 +337,8 @@ html {
   display: flex;
 }
 
-.list .movie-list__element:hover {
+.list .movie-list__element:hover,
+.list .movie-list__element:focus {
   transform: scale(0.95);
 }
 

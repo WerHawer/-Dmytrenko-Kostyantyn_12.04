@@ -13,6 +13,11 @@
 }
 
 @media (max-width: 768px) {
+  .view-box:hover,
+  .view-box:focus {
+    transform: none;
+  }
+
   .header {
     justify-content: space-between;
   }
